@@ -1,0 +1,10 @@
+- id: nocommit
+  name: Check nocommit keyword
+  description: Prevent committing if line containing keyword was staged
+  entry: pre_commit_hooks/nocommit.sh
+  language: script
+  always_run: true  # Run on every commit.
+  verbose: true
+  pass_filenames: false
+  args: ["NOCOMMIT"]
+  stages: ["commit", "merge-commit"]
