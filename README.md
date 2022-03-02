@@ -10,7 +10,7 @@ Add to `.pre-commit-config.yaml` in your git repo:
 
 ```yaml
 - repo: https://github.com/guillemglez/pre-commit-nocommit
-    rev: "0.1"
+    rev: 1.0
     hooks:
     - id: nocommit
 ```
@@ -19,7 +19,7 @@ By default the seeked keyword is `NOCOMMIT`. It can be customized by adding it a
 
 ```yaml
 - repo: https://github.com/guillemglez/pre-commit-nocommit
-    rev: "0.1"
+    rev: 1.0
     hooks:
     - id: nocommit
       args: ["MYKEYWORD"]
